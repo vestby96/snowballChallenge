@@ -1,0 +1,16 @@
+.child-two{
+    background-color: white;
+}
+
+.child-three{
+    margin-bottom: 50px;
+}
+
+img{
+    padding: 10px;
+    height: 185px;
+}
+
+.item-one button{
+    background-color: rgb(141, 168, 192);
+}
