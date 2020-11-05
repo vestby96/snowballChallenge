@@ -7,13 +7,9 @@
     text-decoration: none;
 }
 
-body{
-    background-color: rgb(214, 247, 255);
-}
-
 header, .sidebar, .child-one, .child-two, .child-three, .child-four{
-    background-color: rgb(38, 46, 82);
-    color: azure;
+    background-color: rgb(198, 226, 198);
+    color: black;
 }
 
 header{
@@ -24,8 +20,11 @@ header{
 }
 
 .logo{
-    letter-spacing: 5px;
-    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: 10px;
+    font-size: 30px;
     cursor: default;
 }
 
@@ -51,15 +50,16 @@ header{
 }
 
 .sidebar button{
-    width: 200px;
+    width: 150px;
     height: 50px;
     background-color: aliceblue;
     border: none;
+    border-radius: 5px;
     color: black;
 }
 
 .sidebar button:hover{
-    background-color: rgb(195, 227, 255);
+    background-color: rgb(141, 168, 192);
     cursor: pointer;
 }
 
@@ -69,7 +69,6 @@ header{
 
 .parent-one{
     width: 100%;
-    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -78,7 +77,7 @@ header{
 }
 
 .parent-one div{
-    padding: 5px;
+    margin-top: 50px;
     width: 50%;
     min-height: 100px;
     border: none;
@@ -86,10 +85,48 @@ header{
 }
 
 .parent-one h4{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: normal;
 }
 
 .parent-one p{
     padding: 5px;
+}
+
+@media screen and (max-width:950px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .sidebar{
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+        top: 10px;
+        left: 0%;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .sidebar ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar li{
+        position: relative;
+        top: 15px;
+        padding-right: 10px;
+    }
+
+    .sidebar button{
+        width: 100px;
+    }
+
+    .parent-one div{
+        width: 80%;
+    }
+
 }
